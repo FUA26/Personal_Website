@@ -258,7 +258,7 @@ nav ul li a {
 /*Home Section 4*/
 .hm-sc4{
   text-align: center;
-  padding: 5em 0;
+  padding: 6em 0;
   margin-bottom: 60px
 }
 .skills{
@@ -281,16 +281,77 @@ nav ul li a {
 /*Section hm-sec5*/
 .hm-sc5{
   background-color: var(--primary);
-  
   position: relative;
   -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 10px;
 }
-
-
+.hm-sc5 ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.hm-sc5 ul li{
+  list-style: none;
+}
+.hm-sc5 ul li a{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background:linear-gradient(0deg, #ddd,#fff);
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(229, 229, 229, 0.2);
+  transition: .5s;
+}
+.hm-sc5 ul li a:hover{
+  box-shadow: 0 2px 5px rgba(229, 229, 229, 0.2);
+}
+.hm-sc5 ul li a .fa{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background:linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(45px - 10px);
+  font-size: 18px;
+  color: #262626;
+  transition: .5s;
+}
+.hm-sc5 ul li:nth-child(1) a:hover .fa{
+  color:#3b5998;
+}
+.hm-sc5 ul li:nth-child(2) a:hover .fa{
+  color:#bc2a8d;
+}
+.hm-sc5 ul li:nth-child(3) a:hover .fa{
+  color:#007bb6;
+}
+.hm-sc5 ul li:nth-child(4) a:hover .fa{
+  color:#ea4c89;
+}
+.hm-sc5 ul li:nth-child(5) a:hover .fa{
+  color:#333;
+}
+.byme{
+  text-align: center;
+  margin-top: 100px;
+}
 @media screen and (max-width: 864px) {
 	.logo {
 		padding-top:  10px;
+
 	}
 
 	.nav-wrapper {
